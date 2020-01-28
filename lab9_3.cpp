@@ -16,7 +16,6 @@ int main(){
 	ofstream dest;
 		dest.open("C:\\Users\\lab314-54\\Desktop\\lab9-2562-2-Siriphong-K\\score01_copy.txt");
 				while(getline(source,text)){
-						cout<<text<<"\n";
 						dest<<text<<"\n";
 						sum=sum+atof(text.c_str());
 						sum2+=atof(text.c_str())*atof(text.c_str());
@@ -27,7 +26,7 @@ int main(){
 			dest<<"Number of data = "<<i<<"\n";
 			cout<<"Number of data = "<<i<<"\n";
 			dest<<"Mean = "<<mean<<"\n";
-			cout<<"Mean = "<<mean<<"\n";
+			cout<<"Mean = "<<sum/i<<"\n";
 			dest<<"Standard deviation = "<<SD<<"\n";
 			cout<<"Standard deviation = "<<SD<<"\n";
 				dest.close();
